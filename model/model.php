@@ -8,3 +8,13 @@
  *                  [add $logName in function setFullPath]
  * Git source  :    [link]
  */
+
+function checkData($emailCheck,$passwordCheck)
+{
+    $query = "SELECT userPsw FROM snows.users where userEmailAddress = '$emailCheck' ";
+    require_once 'dbConnector.php';
+    executeQuerySelect($query);
+ //   if ($passwordCheck == $queryResult);
+
+
+}
