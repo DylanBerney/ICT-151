@@ -9,11 +9,11 @@
 // tampon de flux stocké en mémoire
 ob_start();
 $titre="RentASnow - Accueil";
+
 ?>
 
 <div class="span12" id="divMain">
   <h1>Nos activités</h1>
-
 	<p><strong>Rent A Snow</strong> est spécialisée dans la location de snows. Nous avons tout types de modèles :
   <ul>
     <li>des plus récents au plus anciens,

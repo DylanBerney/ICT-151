@@ -46,4 +46,17 @@ function executeQuerySelect($query){
     return $queryResult;
 }
 
+function executeQueryInsert($queryCreateUser)
+{
+    $queryResult = null;
+
+    $dbConnexion = openDBConnexion();//open database connexion
+    if ($dbConnexion != null)
+    {
+        $statement = $dbConnexion->prepare($queryCreateUser);//prepare query
+        $statement->execute();//execute query
+    }
+    $dbConnexion = null;//close database connexion
+}
+
 
